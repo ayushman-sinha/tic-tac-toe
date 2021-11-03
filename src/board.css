@@ -1,0 +1,52 @@
+body
+{
+    display:flex;
+    min-height:100vh;
+    justify-content:center;
+    align-items:center;
+}
+.mainContainer
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.container
+{
+   
+    display:grid;
+    position: relative;
+    width:180px;
+    height:180px;
+  grid-row: ;
+  grid-template-columns: auto auto auto;
+    justify-content:center;
+    align-items:center;
+    flex:wrap;
+}
+
+.eachSq
+{
+    display:flex;
+ justify-content:center;
+ align-items:center;
+    width:60px;
+    height:60px;
+    margin:auto;
+    color:white;
+    position: relative;
+    background-color:black;
+
+}
+.winBox
+{
+    display:flex;
+    position: relative;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    height:40px;
+    color:white;
+    background-color:black;
+    margin-top:20px;
+}

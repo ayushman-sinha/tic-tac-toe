@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+body{
+    display: flex;
+    background-color: black;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    flex-direction: column;
+
+}
+
+.ButtonContainer
+{
+    display: flex;
+    min-width: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.headText
+{
+    display: flex;
+    font-size: 72px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+    width:100%;
+    height: 100px;
+    margin-bottom: 0px;
+    color:transparent;
+    user-select: none;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px #f8f8f8;
+    background:url(img/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation:back 14s linear infinite alternate-reverse;
+    /*background-color: antiquewhite;*/
+}
+@keyframes  back{
+    
+   
+100%
+{
+    background-position: 2000px 0;  
+}
+0%
+{
+    background-position: 1000px 0;  
+}
+
+}
+.headText:hover
+{
+    text-shadow: 12px 12px 20px rgb(87, 83, 88);
+    cursor:pointer;
+    transition: 0.5s;
+}
+.box
+{
+    font-size: 9px;
+    letter-spacing: 4px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height:50px;
+    border-radius: 8px;
+    margin: 25px;
+    transition: 0.5s;
+    overflow: hidden;
+    user-select: none;
+}
+
+.box:hover
+{
+    cursor: pointer;  
+    text-shadow: 2px 2px 3px #ba12db;
+}
+.box:hover::before
+{
+    cursor: pointer;
+    width: 230px;
+    height:260px;
+    transition: 1s;
+}
+
+.box::before
+{
+    content: '';
+    z-index: -3;
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    background: linear-gradient(170deg, rgba(19,215,205,1) 19%, rgba(170,23,244,1) 67%);
+    animation: animate 4s linear infinite;
+}
+
+.box::after
+{
+    content: '';
+    position: absolute;
+    z-index: -3;
+    background: black;
+    inset: 2px;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.box:nth-child(4)::before
+{  
+    background:linear-gradient(170deg, rgba(19,215,205,1) 38%, rgba(95,244,23,1) 71%);
+    animation: animate 3s linear infinite reverse;
+}
+
+/*Neon button*/
+.neon{
+color:white;
+letter-spacing: 2px;
+font-size: 13px;
+display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height:55px;
+    margin: 20px;
+    user-select: none;
+    cursor: pointer;
+   overflow: hidden;
+   transition: 0.5s;
+
+}
+.neon:hover
+{
+    color:black;
+    background-color: #CCFF00;
+    
+    box-shadow: 0px 0px 50px #CCFF00;
+    transition: 0.5s;
+}
+.neon:hover::before
+{
+    width: 100%;
+    height:100%;
+    transition:0.5s;
+}
+.neon::before
+{
+ content: '';
+ position: absolute;
+top: 0;
+left: 0;
+width: 20px;
+height: 20px;
+ border-top: 2px solid #bfff80;
+ border-left: 2px solid #bfff80;
+ transition:0.5s;
+
+}
+.neon:hover::after
+{
+    width: 100%;
+    height:100%;
+    transition:0.5s;
+}
+.neon::after
+{
+ content: '';
+ position: absolute;
+bottom: 0;
+right: 0;
+width: 20px;
+height: 20px;
+ border-bottom: 2px solid #bfff80;
+ border-right: 2px solid #bfff80;
+ transition:0.5s;
+
+
+}
+
+
+
