@@ -50,3 +50,11 @@ body
     background-color:black;
     margin-top:20px;
 }
+.GameContainer
+{
+   
+    min-width: 600px;
+   color:transparent;
+    position: absolute;
+    z-index: 2;
+}
