@@ -10,6 +10,7 @@ body
     display:flex;
     justify-content:center;
     align-items:center;
+    
 }
 .container
 {
@@ -18,12 +19,15 @@ body
     position: relative;
     width:180px;
     height:180px;
-  grid-row: ;
+
+  grid-row: 3;
   grid-template-columns: auto auto auto;
     justify-content:center;
     align-items:center;
     flex:wrap;
+    grid-gap: 3px;
 }
+
 
 .eachSq
 {

@@ -7,7 +7,7 @@ const Board = ({ squares, onClick }) => (
 	<div className="container">
         
 		{squares.map((square, i) => (
-			<Square className={`eachSq`} key={i} value={square} onClick={() => onClick(i)} />
+			<Square className={`neon`} key={i} value={square} onClick={() => onClick(i)} />
 		)) }
       
 	</div>
