@@ -1,8 +1,23 @@
 import React from "react";
 import Games from './Game'
 import StartPage from "./StartPage";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from "react-loader-spinner";
+
 
 const App =()=>
-<StartPage/>
-export default App;
+{
+  
+return(
+    <div>
+          <StartPage/>
+     
+     
+      </div>
+
+
+)
+    
+}
+
+    export default App;

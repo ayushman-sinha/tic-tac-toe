@@ -7,7 +7,7 @@ const Game = () => {
     const [board, setBoard] = useState(Array(9).fill(null));
     const [xIsNext, setXisNext] = useState(true);
     const winner = calculateWinner(board);   
-    const [isStart, setIsStart] = useState(2);
+   
     const handleClick = (i) => {
         const boardCopy = [...board];
         // If user click an occupied square or if game is won, return
@@ -18,18 +18,17 @@ const Game = () => {
         setBoard(boardCopy);
         setXisNext(!xIsNext);
     };
-   if(isStart==2)
-   {
+  
  return(<>
     <Board squares={board} onClick={handleClick} />
     <div className="winBox">
         
- <p>
+ <div className="winText">
   
       {winner ? "Winner: " + winner : "Next Player: " + (xIsNext ? "X" : "O") }
      
   
-      </p> 
+      </div> 
      
           </div>
           <div className="box" onClick={() => window.location.reload(false)}><h1>Back</h1></div>
@@ -37,7 +36,7 @@ const Game = () => {
     
 
   </>);  
-   }
+   
   
   
 

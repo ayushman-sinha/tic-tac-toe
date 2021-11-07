@@ -1,9 +1,7 @@
 import { useState } from "react";
 import  './board.css';
 import './buttonC.css';
-import Particles from "react-tsparticles";
-import particleConfig from './particleConfig';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 import Game from './Game';
 const HomeButtons = () => {
     const [isStart, setIsStart] = useState(1);
@@ -32,7 +30,14 @@ const HomeButtons = () => {
      if(isStart==3)
     {
         return(
-            <div></div>
+            <>
+            <div className="rules"><ul>
+                <li>Follow me on Instagram : @ayushmaan.sinha</li>
+                <li>Follow me on LinkedIn : https://www.linkedin.com/in/ayushman-sinha-1606/</li>
+            </ul></div>
+            <div className="box" onClick={() => window.location.reload(false)}><h1>Back</h1></div>
+            </>
+            
         )
     }
 
