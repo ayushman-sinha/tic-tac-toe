@@ -6,29 +6,35 @@ import particleConfig from './particleConfig';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Game from './Game';
 const HomeButtons = () => {
-    const [isStart, setIsStart] = useState(false);
+    const [isStart, setIsStart] = useState(1);
     
-     if(!isStart)
+     if(isStart==1)
      {
     return (
         
         <div className="ButtonContainer">
-             <div className="box" onClick={() => setIsStart(true)}><h1>Start</h1></div>
-            <div className="box"  ><h1>Rules</h1></div>
-            <div className="box" onClick={() => setIsStart(false)}><h1>Exit</h1></div>
-            {isStart ?  <div className="GameContainer"><Game ></Game></div>: null}
+             <div className="box" onClick={() => setIsStart(2)}><h1>Start</h1></div>
+            <div className="box" onClick={() => setIsStart(3)} ><h1>Rules</h1></div>
+            <div className="box" onClick={() => setIsStart(1)}><h1>Exit</h1></div>
+          
            
         </div>
         
     )
      }
-     else
+    if(isStart==2)
      {
          return(
         <div >
    <Game ></Game>  
             </div>)
      }
+     if(isStart==3)
+    {
+        return(
+            <div></div>
+        )
+    }
 
 }
 
