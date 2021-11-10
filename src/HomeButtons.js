@@ -23,7 +23,7 @@ const HomeButtons = () => {
     if(isStart==2)
      {
          return(
-        <div >
+        <div  >
    <Game ></Game>  
             </div>)
      }

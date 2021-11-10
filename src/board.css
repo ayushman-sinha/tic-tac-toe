@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Rubik:wght@500&display=swap');
 body
 {
+    background-color: rgb(162, 126, 226);
     display:flex;
     min-height:100vh;
     justify-content:center;
@@ -8,6 +9,7 @@ body
 }
 .mainContainer
 {
+    
     display:flex;
     justify-content:center;
     align-items:center;
@@ -70,15 +72,23 @@ body
     margin-top: 20px;
     font-size: 20px;
     display: flex;
+ 
     position: relative;
     font-family: 'Nunito', sans-serif;
  letter-spacing: 2px;
  color: aliceblue;
  margin: auto;
-    width:100%;
+   min-width: 800px;
     height: 300px;
    /* background-color: aliceblue; */
 }
 li{
     line-height: 40px;
+}
+.adjustPos
+{
+   
+    display: flex;
+  
+    
 }
